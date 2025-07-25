@@ -38,6 +38,11 @@
     font-family: "Noto Serif", serif;
     font-size: 3rem;
     font-weight: 700;
+    text-align: center;
+}
+
+.h2_color{
+    color: #E95A08;
 }
 
 main{
@@ -122,15 +127,6 @@ nav{
     text-align: center;
 }
 
-.info h2{
-    font-size: 3rem;
-    font-weight: 700;
-}
-
-.h2_color{
-    color: #E95A08;
-}
-
 .card_container{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -190,6 +186,71 @@ nav{
     filter: drop-shadow(4px 7px 3px rgba(0, 0, 0, 0.493));
 }
 
+/*deals part*/
+.content{
+    max-width: 888px;
+    margin: 0 auto;
+}
+
+.offers{
+    display: grid;
+    grid-template-columns: 367px 753px;
+    grid-template-rows: repeat(2, 197px);
+    gap: 1.5rem;
+    margin-top: 120px;
+}
+
+.blocks{
+    border: none;
+    border-radius: 22px;
+    display: grid;
+    align-items: center;
+}
+
+.blocks h4{
+    font-family: "Noto Serif", serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+}
+
+.blocks h3{
+    font-family: "Noto Serif", serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+}
+
+#box1{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.38), rgba(0, 0, 0, 0.38)),url(assets/deal-bloom.png);
+}
+
+#box2{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.38), rgba(0, 0, 0, 0.38)),url(assets/deal-zabo.png);
+    grid-row: span 2;
+}
+
+#box2 a{
+    font-size: 1.75rem;
+}
+
+#box3{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.38), rgba(0, 0, 0, 0.38)),url(assets/deal-ana.png);
+}
+
+.blocks a{
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    display: block;
+    margin-top: 1.5rem;
+}
+
+
+
 /*responsive design*/
 @media screen and (max-width : 576px){
     .light, #bold {
@@ -228,7 +289,6 @@ nav{
 
     .b_content p{
         margin-top: 13px;
-        font-size: 14px;
         text-align: left;
     }
 
@@ -255,7 +315,6 @@ nav{
     }
 
     .info p{
-        font-size: 14px;
         margin-bottom: 1.5rem;
     }
 
@@ -289,5 +348,56 @@ nav{
 
     .flw_fans ul{
         font-size: 14px;
+    }
+
+    .offers{
+        display: flex;
+        flex-direction: column;
+        margin-top: 3rem;
+    }
+
+    .blocks{
+        width: calc(100% - 2rem);
+        height: 185px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0 1rem 0 1rem;
+    }
+
+    #box1{
+        order: 1;
+        border-radius: 14px;
+    }
+
+    #box2{
+        order: 3;
+        border-radius: 14px;
+    }
+
+    #box3{
+        order: 2;
+        border-radius: 0px;
+    }
+
+    .blocks h3{
+    font-family: "Noto Serif", serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    }
+
+    #box2 a{
+        font-size: 1rem;
+    }
+
+    .p_h{
+    font-family: "Noto Serif", serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: black;
+    }
+
+    .p_text{
+    font-size: 14px;
     }
 }
