@@ -518,4 +518,8 @@ nav{
     .container-4{
         padding-left: 1rem;
     }
+
+    .footer_list{
+        font-size: 14px;
+    }
 }
