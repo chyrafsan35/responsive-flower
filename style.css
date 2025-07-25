@@ -10,10 +10,14 @@
 }
 
 
+
 .noto-serif-font {
   font-family: "Noto Serif", serif;
   font-optical-sizing: auto;
+  font-weight: <weight>;
   font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
 }
 
 /*Shared styles*/
@@ -113,6 +117,10 @@ nav{
     font-size: 4rem;
     font-weight: 700;
     color: #E95A08;
+}
+
+#imp{
+    text-align: left;
 }
 
 .solo{
@@ -247,6 +255,35 @@ nav{
     text-align: center;
     display: block;
     margin-top: 1.5rem;
+}
+
+/*join part*/
+.join{
+    background-image: url(assets/news-letter-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 199px 0px 193px 0px;
+}
+
+.join h2{
+    color: white;
+}
+
+.input {
+    margin-top: 1.5rem;
+}
+
+.join input{
+    width: 644px;
+    padding: 1.15rem;
+    border: none;
+    border-radius: 0px;
+}
+
+.input{
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
 }
 
 
@@ -399,5 +436,30 @@ nav{
 
     .p_text{
     font-size: 14px;
+    }
+
+    .join{
+        background-size: cover;
+        padding-left: 2.25rem;
+        padding-right: 2.25rem;
+        background-position: 40% 50%;
+        padding-top: 110.5px;
+        padding-bottom: 4rem;
+    }
+
+    .join h2{
+        font-size: 20px;
+    }
+
+    .join input{
+        width: 318px;
+    }
+
+    .join button{
+        width: 103px;
+        font-size: 1rem;
+        font-weight: 600;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 }
