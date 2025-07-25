@@ -153,6 +153,14 @@ nav{
     margin-top: 1.5rem;
 }
 
+.cards button{
+    cursor: pointer;
+}
+
+.cards button:hover {
+    background-color: #e95a08ca;
+}
+
 #h_bold{
     font-weight: 700;
     margin-bottom: 1.5rem;
@@ -192,6 +200,16 @@ nav{
     top: -140px;
     left: 350px;
     filter: drop-shadow(4px 7px 3px rgba(0, 0, 0, 0.493));
+    animation: run 10s linear 0s infinite;
+}
+
+@keyframes run {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
 }
 
 /*deals part*/
@@ -333,6 +351,13 @@ nav{
     width: 36px;
 }
 
+#small{
+    width: 26px;
+    height: 26px;
+    position: relative;
+    top: 5px;
+}
+
 /*responsive design*/
 @media screen and (max-width : 576px){
     .light, #bold {
@@ -457,7 +482,7 @@ nav{
 
     #box3{
         order: 2;
-        border-radius: 0px;
+        border-radius: 14px;
     }
 
     .blocks h3{
